@@ -41,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0-placeholder-for-preset-env.2",
     "daisyui": "^3.0.20",
     "tailwindcss": "^3.3.2"
   }
