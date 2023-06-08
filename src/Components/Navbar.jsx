@@ -1,0 +1,51 @@
+import { FaRegFolderOpen, FaRegStar } from "react-icons/fa";
+import { FiHome } from "react-icons/fi";
+import { Link } from "react-scroll";
+
+const Navbar = () => {
+  return (
+    <ul className="menu menu-horizontal bg-base-200  navbar ">
+      <li>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-95}
+          duration={500}
+          className="tooltip"
+          data-tip="Home"
+        >
+          <FiHome size={25}></FiHome>
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="experience"
+          spy={true}
+          smooth={true}
+          offset={-95}
+          duration={500}
+          className="tooltip"
+          data-tip="Experiences"
+        >
+          <FaRegStar size={25}></FaRegStar>
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-95}
+          duration={500}
+          className="tooltip"
+          data-tip="Projects"
+        >
+          <FaRegFolderOpen size={25}></FaRegFolderOpen>
+        </Link>
+      </li>
+    </ul>
+  );
+};
+
+export default Navbar;

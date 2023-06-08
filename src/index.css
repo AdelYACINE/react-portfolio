@@ -1,13 +1,189 @@
-body {
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 100%;
+}
+
+/********************************************************************************/
+/*************navbar***********************************************************/
+.navbar {
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: white;
+  gap: 2rem;
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
+  z-index: 10;
+}
+.nav-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/*************************************************************************/
+/**************hero********************************************************/
+.hero {
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
+}
+.hero-content {
+  gap: 3.2rem;
+}
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.hero-icons {
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  align-self: center;
+}
+.hero-icon {
+  cursor: pointer;
+}
+/**************************************************************************/
+/************Skills********************************************************/
+.container-skills {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.title-skills {
+  font-size: 4.2rem;
+  font-weight: bold;
+  align-self: center;
+  margin: 2rem;
+}
+.heading-skills {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.text-skills {
+  font-size: 1.6rem;
+}
+/*********************************************************************/
+/************project************************************************/
+.projects-container {
+  padding: 3.2rem 0;
+}
+.cards-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.card {
+  max-width: 30rem;
+  height: 25rem;
+  transition: 0.4s all ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-bottom: 1.6rem;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.pic-card {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  /* border: 1px solid #333;*/
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.05);
+}
+.title-projects {
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.modal-box {
+  max-width: 70rem;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.img-box-modal {
+  width: 100%;
+  height: 35rem;
+  object-fit: contain;
+  border-radius: 0.8rem;
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.1);
+}
+.btn-modal {
+  font-size: 1rem;
+}
+.container-link {
+  display: flex;
+
+  gap: 10rem;
+}
+.link {
+  font-size: 1.4rem;
+}
+/******************************************************************/
+/**********experience**********************************************/
+.timeline-container {
+  max-height: 100vh;
+  background-color: rgba(220, 220, 220, 0.485);
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
+}
+/*******************************************************************/
+/************footer***********************************************/
+.footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+}
+/************************************************************************************/
+/**********responsive***************************************************************/
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 285px) {
+  html {
+    font-size: 40%;
+  }
 }
