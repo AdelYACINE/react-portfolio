@@ -23,7 +23,7 @@ const Hero = () => {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={-88}
               duration={1000}
             >
               View Projects
