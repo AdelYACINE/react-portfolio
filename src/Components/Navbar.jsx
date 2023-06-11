@@ -8,7 +8,7 @@ const Navbar = () => {
       <li>
         <Link
           to="home"
-          spy={true}
+          //spy={true}
           smooth={true}
           offset={-95}
           duration={1000}
@@ -21,7 +21,7 @@ const Navbar = () => {
       <li>
         <Link
           to="experience"
-          spy={true}
+          //spy={true}
           smooth={true}
           offset={-95}
           duration={1000}
@@ -34,7 +34,7 @@ const Navbar = () => {
       <li>
         <Link
           to="projects"
-          spy={true}
+          //spy={true}
           smooth={true}
           offset={-95}
           duration={1000}
