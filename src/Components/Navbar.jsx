@@ -23,7 +23,7 @@ const Navbar = () => {
           to="experience"
           //spy={true}
           smooth={true}
-          offset={-95}
+          offset={-68}
           duration={1000}
           className="tooltip"
           data-tip="Experiences"
@@ -36,7 +36,7 @@ const Navbar = () => {
           to="projects"
           //spy={true}
           smooth={true}
-          offset={-95}
+          offset={-65}
           duration={1000}
           className="tooltip"
           data-tip="Projects"
