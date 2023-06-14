@@ -1,8 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import p9 from "../imgs/p9.jpg";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -13,10 +16,8 @@ const Hero = () => {
             alt="hero-img"
           />
           <div className="hero-text-content">
-            <h1 className="text-5xl font-bold">Hi,I'm Ahmed Adel YACINE</h1>
-            <p className="py-6 text-2xl">
-              A front-end web developer with a passion of learning and creating.
-            </p>
+            <h1 className="text-5xl font-bold">{t("herotitle")}</h1>
+            <p className="py-6 text-2xl">{t("herotext")}</p>
 
             <Link
               className="btn btn-neutral text-xl "
@@ -26,7 +27,7 @@ const Hero = () => {
               offset={-65}
               duration={1000}
             >
-              View Projects
+              {t("herobutton")}
             </Link>
 
             <div className="hero-icons">

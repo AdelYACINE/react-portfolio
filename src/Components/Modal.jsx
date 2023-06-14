@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Modal = ({ project }) => {
   const modalRef = useRef(null);
@@ -15,10 +16,12 @@ const Modal = ({ project }) => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div>
       <button className="btn btn-modal" onClick={openModal}>
-        View More
+        {t("projetButton")}
       </button>
 
       <dialog className="modal" ref={modalRef}>
@@ -37,7 +40,7 @@ const Modal = ({ project }) => {
               target="_blank"
               rel="noreferrer"
             >
-              Check Out Github Repo
+              {t("linkGithub")}
             </a>
             <a
               href={project.live}
@@ -45,7 +48,7 @@ const Modal = ({ project }) => {
               target="_blank"
               rel="noreferrer"
             >
-              Go Live
+              {t("linkDirect")}
             </a>
           </div>
         </form>

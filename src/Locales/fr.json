@@ -1,0 +1,25 @@
+{
+  "herotitle": "Salut, je suis Ahmed Adel YACINE",
+  "herotext": "Un développeur web front-end passionné par l'apprentissage et la création.",
+  "herobutton": "voir les projects",
+
+  "skillstitle": "Compétences",
+
+  "experiencetitle": "Expériences",
+  "experiencetitle1": "BAC scientifique",
+  "experienceLieu1": "Lycée Mustapha Heddam",
+  "experiencetitle2": "Licence génie des procédés",
+  "experienceLieu2": "Université des sciences et de la technologie d'Oran Mohamed Boudiaf faculté de chimie",
+  "experiencetitle3": "Master pétrochimie",
+  "experienceLieu3": "Université des sciences et de la technologie d'Oran Mohamed Boudiaf faculté de chimie",
+  "experiencetitle4": "Formation de developement web",
+  "experienceLieu4": "front-end developement online",
+
+  "projetTitle": "Mes projets",
+  "projetButton": "voir plus",
+
+  "linkDirect": "Direct",
+  "linkGithub": "Référentiel Github",
+
+  "footer": " ©créé par@YACINE ahmed adel 2023"
+}

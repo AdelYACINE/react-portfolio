@@ -1,6 +1,7 @@
 import { FaRegFolderOpen, FaRegStar } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
 import { Link } from "react-scroll";
+import SelectorLng from "./SelectorLng";
 
 const Navbar = () => {
   return (
@@ -44,6 +45,8 @@ const Navbar = () => {
           <FaRegFolderOpen size={25}></FaRegFolderOpen>
         </Link>
       </li>
+
+      <SelectorLng />
     </ul>
   );
 };

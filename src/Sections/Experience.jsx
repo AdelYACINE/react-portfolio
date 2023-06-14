@@ -5,14 +5,19 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaGraduationCap } from "react-icons/fa";
 import Skills from "../Components/Skills";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="experience">
       <Skills />
 
       <div className="timeline-container">
-        <h1 className="title-skills underline text-center">Experience</h1>
+        <h1 className="title-skills underline text-center">
+          {t("experiencetitle")}
+        </h1>
         <VerticalTimeline lineColor="#213555">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -23,10 +28,10 @@ const Experience = () => {
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
-              BAC scientifique
+              {t("experiencetitle1")}
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-2xl">
-              Lycée Mustapha Heddam
+              {t("experienceLieu1")}
             </h4>
           </VerticalTimelineElement>
 
@@ -37,11 +42,10 @@ const Experience = () => {
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Licence génie des procédés
+              {t("experiencetitle2")}
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-2xl ">
-              Université des sciences et de la technologie d'Oran Mohamed
-              Boudiaf faculté de chimie
+              {t("experienceLieu2")}
             </h4>
           </VerticalTimelineElement>
 
@@ -52,11 +56,10 @@ const Experience = () => {
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Master pétrochimie
+              {t("experiencetitle3")}
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-2xl">
-              Université des sciences et de la technologie d'Oran Mohamed
-              Boudiaf faculté de chimie
+              {t("experienceLieu3")}
             </h4>
           </VerticalTimelineElement>
 
@@ -67,10 +70,10 @@ const Experience = () => {
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Formation de developement web
+              {t("experiencetitle4")}
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-2xl">
-              front-end developement online
+              {t("experienceLieu4")}
             </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>

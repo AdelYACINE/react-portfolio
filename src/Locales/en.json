@@ -1,0 +1,25 @@
+{
+  "herotitle": "Hi,I'm Ahmed Adel YACINE",
+  "herotext": "A front-end web developer with a passion of learning and creating.",
+  "herobutton": "view projects",
+
+  "skillstitle": "Skills",
+
+  "experiencetitle": "Experiences",
+  "experiencetitle1": "Scientific secondary school diploma",
+  "experienceLieu1": "Mustapha Heddam High School",
+  "experiencetitle2": "Process engineering license",
+  "experienceLieu2": "University of science and technology of Oran Mohamed Boudiaf faculty of chemistry",
+  "experiencetitle3": "Master in petrochemistry",
+  "experienceLieu3": "University of science and technology of Oran Mohamed Boudiaf faculty of chemistry",
+  "experiencetitle4": "web development training",
+  "experienceLieu4": "online front-end development",
+
+  "projetTitle": "My projects",
+  "projetButton": "view more",
+
+  "linkDirect": "Go Live",
+  "linkGithub": "Check Out Github Repo",
+
+  "footer": "©created by@YACINE ahmed adel 2023"
+}
