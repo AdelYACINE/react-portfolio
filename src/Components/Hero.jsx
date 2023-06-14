@@ -22,7 +22,6 @@ const Hero = () => {
             <Link
               className="btn btn-neutral text-xl "
               to="projects"
-              //spy={true}
               smooth={true}
               offset={-65}
               duration={1000}

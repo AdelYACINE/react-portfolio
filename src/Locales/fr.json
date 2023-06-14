@@ -1,4 +1,8 @@
 {
+  "home": "Acceuil",
+  "skills": "compétences",
+  "projects": "projets",
+
   "herotitle": "Salut, je suis Ahmed Adel YACINE",
   "herotext": "Un développeur web front-end passionné par l'apprentissage et la création.",
   "herobutton": "voir les projects",

@@ -1,4 +1,8 @@
 {
+  "home": "Home",
+  "skills": "Skills",
+  "projects": "Projects",
+
   "herotitle": "Hi,I'm Ahmed Adel YACINE",
   "herotext": "A front-end web developer with a passion of learning and creating.",
   "herobutton": "view projects",
