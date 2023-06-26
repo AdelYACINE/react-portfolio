@@ -16,7 +16,7 @@ const Hero = () => {
             alt="hero-img"
           />
           <div className="hero-text-content">
-            <h1 className="text-5xl font-bold">{t("herotitle")}</h1>
+            <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
             <p className="py-6 text-2xl">{t("herotext")}</p>
 
             <Link
