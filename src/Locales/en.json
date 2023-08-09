@@ -4,7 +4,8 @@
   "projects": "Projects",
 
   "herotitle": "Hi,I'm Ahmed Adel YACINE",
-  "herotext": "Petroleum engineer turned passionate front-end developer. Strong skills in HTML, CSS, JavaScript, and frameworks (React.js). Seeking exciting opportunities to kickstart my career as a front-end developer. Open to learning and contributing to challenging projects.",
+  "heroSecondTitle": "Junior Front-end developer",
+  "herotext": "Petroleum engineer turned passionate front-end developer. Strong skills in HTML, CSS, JavaScript, and React.js. Seeking exciting opportunities to kickstart my career as a front-end developer. Open to learning and contributing to challenging projects.",
   "herobutton": "view projects",
 
   "skillstitle": "Skills",

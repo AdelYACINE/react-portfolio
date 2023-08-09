@@ -17,6 +17,9 @@ const Hero = () => {
           />
           <div className="hero-text-content">
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
+            <h2 className="text-3xl font-bold hero-title-second">
+              {t("heroSecondTitle")}
+            </h2>
             <p className="py-6 text-2xl">{t("herotext")}</p>
 
             <Link
