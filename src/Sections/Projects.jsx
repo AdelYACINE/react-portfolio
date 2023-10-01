@@ -26,7 +26,7 @@ const Projects = () => {
       <motion.h1
         initial={{ x: -1000 }}
         animate={isInView && { x: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="title-projects underline"
       >
         {t("projetTitle")}
@@ -34,7 +34,7 @@ const Projects = () => {
       <motion.div
         initial={{ x: 1500 }}
         animate={isInView && { x: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="cards-container"
       >
         {ProjectsList.map((proj) => {
