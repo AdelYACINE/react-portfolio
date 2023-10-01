@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const Projects = () => {
   const { t } = useTranslation();
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref, inView } = useInView({ triggerOnce: true });
   const [isInView, setIsInView] = useState(false);
   useEffect(() => {
     if (inView) {
