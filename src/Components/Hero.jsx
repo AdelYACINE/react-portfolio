@@ -2,20 +2,29 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import p9 from "../imgs/p9.jpg";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
+          <motion.img
+            initial={{ x: 500 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.8 }}
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
           />
-          <div className="hero-text-content">
+          <motion.div
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className="hero-text-content"
+          >
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
             <h2 className="text-3xl font-bold hero-title-second">
               {t("heroSecondTitle")}
@@ -49,7 +58,7 @@ const Hero = () => {
                 <FaLinkedin size={40} className="hero-icon" />
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
