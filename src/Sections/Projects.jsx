@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const Projects = () => {
   const { t } = useTranslation();
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const [isInView, setIsInView] = useState(false);
   useEffect(() => {
     if (inView) {
@@ -26,7 +26,7 @@ const Projects = () => {
       <motion.h1
         initial={{ x: -1000 }}
         animate={isInView && { x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         className="title-projects underline"
       >
         {t("projetTitle")}
@@ -34,7 +34,7 @@ const Projects = () => {
       <motion.div
         initial={{ x: 1500 }}
         animate={isInView && { x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         className="cards-container"
       >
         {ProjectsList.map((proj) => {
