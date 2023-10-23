@@ -12,6 +12,7 @@ const Hero = () => {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <motion.img
+            style={{ backfaceVisibility: "hidden" }}
             initial={{ x: 500 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.8 }}
@@ -20,6 +21,7 @@ const Hero = () => {
             alt="hero-img"
           />
           <motion.div
+            style={{ backfaceVisibility: "hidden" }}
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
