@@ -23,23 +23,17 @@ const Projects = () => {
       id="projects"
       style={{ overflow: "hidden" }}
     >
-      <motion.h1
-        initial={{ x: -1000 }}
-        animate={isInView && { x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="title-projects underline"
-      >
-        {t("projetTitle")}
-      </motion.h1>
       <motion.div
-        initial={{ x: 1500 }}
-        animate={isInView && { x: 0 }}
+        initial={{ y: 1500 }}
+        animate={isInView && { y: 0 }}
         transition={{ duration: 0.8 }}
-        className="cards-container"
       >
-        {ProjectsList.map((proj) => {
-          return <Cards key={proj.id} project={proj} />;
-        })}
+        <h1 className="title-projects underline">{t("projetTitle")}</h1>
+        <div className="cards-container">
+          {ProjectsList.map((proj) => {
+            return <Cards key={proj.id} project={proj} />;
+          })}
+        </div>
       </motion.div>
     </div>
   );

@@ -16,21 +16,12 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="hero-content flex-col lg:flex-row-reverse"
         >
-          <motion.img
-            // initial={{ x: 500 }}
-            //animate={{ x: 0 }}
-            //transition={{ duration: 0.7 }}
-
+          <img
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
           />
-          <motion.div
-            //initial={{ x: -2000 }}
-            //animate={{ x: 0 }}
-            //transition={{ duration: 1.1 }}
-            className="hero-text-content"
-          >
+          <div className="hero-text-content">
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
             <h2 className="text-3xl font-bold hero-title-second">
               {t("heroSecondTitle")}
@@ -64,7 +55,7 @@ const Hero = () => {
                 <FaLinkedin size={40} className="hero-icon" />
               </a>
             </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>
