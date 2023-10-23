@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import p9 from "../imgs/p9.jpg";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -10,19 +10,25 @@ const Hero = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <motion.div
+          initial={{ y: -1000 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="hero-content flex-col lg:flex-row-reverse"
+        >
           <motion.img
-            initial={{ x: 500 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.7 }}
+            // initial={{ x: 500 }}
+            //animate={{ x: 0 }}
+            //transition={{ duration: 0.7 }}
+
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
           />
           <motion.div
-            initial={{ x: -2000 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.1 }}
+            //initial={{ x: -2000 }}
+            //animate={{ x: 0 }}
+            //transition={{ duration: 1.1 }}
             className="hero-text-content"
           >
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
@@ -59,7 +65,7 @@ const Hero = () => {
               </a>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
