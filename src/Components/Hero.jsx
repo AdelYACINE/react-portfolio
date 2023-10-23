@@ -14,14 +14,14 @@ const Hero = () => {
           <motion.img
             initial={{ x: 500 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7 }}
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
             loading="lazy"
           />
           <motion.div
-            initial={{ x: -1000 }}
+            initial={{ x: -2000 }}
             animate={{ x: 0 }}
             transition={{ duration: 1.1 }}
             className="hero-text-content"
