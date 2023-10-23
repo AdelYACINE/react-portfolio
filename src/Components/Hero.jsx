@@ -14,7 +14,7 @@ const Hero = () => {
           <motion.img
             initial={{ x: 500 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
@@ -25,7 +25,6 @@ const Hero = () => {
             animate={{ x: 0 }}
             transition={{ duration: 1.1 }}
             className="hero-text-content"
-            style={{ backfaceVisibility: "hidden" }}
           >
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
             <h2 className="text-3xl font-bold hero-title-second">
