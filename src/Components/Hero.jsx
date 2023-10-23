@@ -18,6 +18,7 @@ const Hero = () => {
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
+            loading="lazy"
           />
           <motion.div
             initial={{ x: -1000 }}
