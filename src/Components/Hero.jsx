@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import p9 from "../imgs/p9.jpg";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const Hero = () => {
           <motion.img
             initial={{ x: 500 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
