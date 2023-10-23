@@ -25,6 +25,7 @@ const Hero = () => {
             animate={{ x: 0 }}
             transition={{ duration: 1.1 }}
             className="hero-text-content"
+            style={{ backfaceVisibility: "hidden" }}
           >
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
             <h2 className="text-3xl font-bold hero-title-second">
