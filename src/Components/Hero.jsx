@@ -14,7 +14,7 @@ const Hero = () => {
           <motion.img
             initial={{ x: 500 }}
             animate={{ x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             src={p9}
             className="max-w-sm rounded-lg shadow-2xl"
             alt="hero-img"
@@ -23,7 +23,7 @@ const Hero = () => {
           <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.1 }}
             className="hero-text-content"
           >
             <h1 className="text-5xl font-bold hero-title">{t("herotitle")}</h1>
