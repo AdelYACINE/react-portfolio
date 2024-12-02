@@ -28,9 +28,8 @@ html {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: white;
   gap: 2rem;
-  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.07);
   z-index: 10;
 }
 .nav-icon {
@@ -51,6 +50,7 @@ html {
 /*************************************************************************/
 /**************hero********************************************************/
 .hero {
+  background-color: rgb(244, 239, 239);
   box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
 }
 .hero-content {
@@ -104,6 +104,12 @@ html {
 }
 .text-skills {
   font-size: 1.6rem;
+}
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 /*********************************************************************/
 /************project************************************************/
@@ -175,9 +181,10 @@ html {
 /******************************************************************/
 /**********experience**********************************************/
 .timeline-container {
+  background-color: rgb(244, 239, 239);
   max-height: 100vh;
-  background-color: rgba(220, 220, 220, 0.485);
-  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 0%, 0.02);
+  box-shadow: 1.2rem 1.4rem 1.6rem hsla(0, 0%, 44%, 0.02);
+  padding-bottom: 3.2rem;
 }
 /*******************************************************************/
 /************footer***********************************************/

@@ -5,20 +5,16 @@
 
   "herotitle": "Hi,I'm Ahmed Adel YACINE",
   "heroSecondTitle": "Junior Front-end developer",
-  "herotext": "Petroleum engineer turned passionate front-end developer. Strong skills in HTML, CSS, JavaScript, and React.js. Seeking exciting opportunities to kickstart my career as a front-end developer. Open to learning and contributing to challenging projects.",
+  "herotext": "Passionate React frontend developer, I have been practicing web development for over a year, I have acquired solid skills through my personal projects. Curious and motivated, I am ready to take on new challenges and invest myself fully within a dynamic team.",
   "herobutton": "view projects",
 
   "skillstitle": "Skills",
 
   "experiencetitle": "Experiences",
-  "experiencetitle1": "Scientific secondary school diploma",
-  "experienceLieu1": "Mustapha Heddam High School",
-  "experiencetitle2": "Process engineering license",
+  "experiencetitle1": "web development training",
+  "experienceLieu1": "Udemy",
+  "experiencetitle2": "Master in petrochemistry",
   "experienceLieu2": "University of science and technology of Oran Mohamed Boudiaf faculty of chemistry",
-  "experiencetitle3": "Master in petrochemistry",
-  "experienceLieu3": "University of science and technology of Oran Mohamed Boudiaf faculty of chemistry",
-  "experiencetitle4": "web development training",
-  "experienceLieu4": "Udemy",
 
   "projetTitle": "My projects",
   "projetButton": "view more",

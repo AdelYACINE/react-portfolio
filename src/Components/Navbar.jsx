@@ -20,18 +20,7 @@ const Navbar = () => {
           <FiHome size={25}></FiHome>
         </Link>
       </li>
-      <li>
-        <Link
-          to="experience"
-          smooth={true}
-          offset={-68}
-          duration={1000}
-          className="tooltip"
-          data-tip={t("skills")}
-        >
-          <FaRegStar size={25}></FaRegStar>
-        </Link>
-      </li>
+
       <li>
         <Link
           to="projects"
@@ -42,6 +31,19 @@ const Navbar = () => {
           data-tip={t("projects")}
         >
           <FaRegFolderOpen size={25}></FaRegFolderOpen>
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="experience"
+          smooth={true}
+          offset={-68}
+          duration={1000}
+          className="tooltip"
+          data-tip={t("skills")}
+        >
+          <FaRegStar size={25}></FaRegStar>
         </Link>
       </li>
 

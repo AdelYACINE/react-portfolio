@@ -37,9 +37,7 @@ const Experience = () => {
         <VerticalTimeline lineColor="#213555">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "white", color: "#444" }}
-            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="2014"
+            date="2023 - 2024"
             iconStyle={{ background: "#213555", color: "#fff" }}
             icon={<FaGraduationCap />}
           >
@@ -53,43 +51,15 @@ const Experience = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2014 - 2017"
+            date="2017 - 2019"
             iconStyle={{ background: "#213555", color: "#fff" }}
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
               {t("experiencetitle2")}
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-2xl ">
+            <h4 className="vertical-timeline-element-subtitle text-2xl">
               {t("experienceLieu2")}
-            </h4>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2017 - 2019"
-            iconStyle={{ background: "#213555", color: "#fff" }}
-            icon={<FaGraduationCap />}
-          >
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
-              {t("experiencetitle3")}
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle text-2xl">
-              {t("experienceLieu3")}
-            </h4>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2023"
-            iconStyle={{ background: "#213555", color: "#fff" }}
-            icon={<FaGraduationCap />}
-          >
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
-              {t("experiencetitle4")}
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle text-2xl">
-              {t("experienceLieu4")}
             </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>

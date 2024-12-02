@@ -5,20 +5,16 @@
 
   "herotitle": " Je suis Ahmed Adel YACINE",
   "heroSecondTitle": "  Développeur Front-end Junior",
-  "herotext": "Ingénieur en pétrochimie reconverti en développeur front-end passionné. Compétences solides en HTML, CSS, JavaScript et React.js. À la recherche d'opportunités passionnantes pour débuter ma carrière en tant que développeur front-end. Ouvert à apprendre et à contribuer à des projets stimulants.",
+  "herotext": "Développeur frontend React passionné, je pratique le développement web depuis plus d’un an, j’ai acquis des compétences solides à travers mes projets personnels. Curieux et motivé, je suis prêt à relever de nouveaux défis et à m’investir pleinement au sein d’une équipe dynamique.",
   "herobutton": "voir les projects",
 
   "skillstitle": "Compétences",
 
   "experiencetitle": "Expériences",
-  "experiencetitle1": "BAC scientifique",
-  "experienceLieu1": "Lycée Mustapha Heddam",
-  "experiencetitle2": "Licence génie des procédés",
+  "experiencetitle1": "Formation de developement web",
+  "experienceLieu1": "Udemy",
+  "experiencetitle2": "Master pétrochimie",
   "experienceLieu2": "Université des sciences et de la technologie d'Oran Mohamed Boudiaf faculté de chimie",
-  "experiencetitle3": "Master pétrochimie",
-  "experienceLieu3": "Université des sciences et de la technologie d'Oran Mohamed Boudiaf faculté de chimie",
-  "experiencetitle4": "Formation de developement web",
-  "experienceLieu4": "Udemy",
 
   "projetTitle": "Mes projets",
   "projetButton": "voir plus",
