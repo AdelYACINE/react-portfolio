@@ -14,6 +14,7 @@ export const ProjectsList = [
     pic: p10,
     live: "https://product-page-yacine.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-e-commerce-product-page",
+    tags: ["React", "Context API", "Vite"],
   },
   {
     id: 2,
@@ -21,14 +22,15 @@ export const ProjectsList = [
     pic: p1,
     live: "https://newsletter-yacine.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-Newsletter-sign-up-form-with-success-message",
+    tags: ["React", "Form validation"],
   },
   {
     id: 3,
-
     name: "manage landing page project using react.js with vite",
     pic: p7,
     live: "https://landing-page-yacine.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-manage-landing-page",
+    tags: ["React", "Vite", "CSS"],
   },
   {
     id: 4,
@@ -36,6 +38,7 @@ export const ProjectsList = [
     pic: p3,
     live: "https://last-update-crypto-adelmadrid-app.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-crypto-app",
+    tags: ["React", "REST API", "Context API"],
   },
   {
     id: 5,
@@ -43,6 +46,7 @@ export const ProjectsList = [
     pic: p4,
     live: "https://space-yacine-web.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-space-website",
+    tags: ["React", "React Router", "Vite"],
   },
   {
     id: 6,
@@ -50,6 +54,7 @@ export const ProjectsList = [
     pic: p5,
     live: "https://food-adelmadrid.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-food-website",
+    tags: ["React", "CSS"],
   },
   {
     id: 7,
@@ -57,6 +62,7 @@ export const ProjectsList = [
     pic: p6,
     live: "https://commerce-adelmadrid.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-shopping-card",
+    tags: ["React", "Context API"],
   },
   {
     id: 8,
@@ -64,5 +70,6 @@ export const ProjectsList = [
     pic: p2,
     live: "https://last-update-adelmadrid-todolist.netlify.app/",
     repo: "https://github.com/AdelYACINE/react-todo-list-app",
+    tags: ["React", "Hooks"],
   },
 ];

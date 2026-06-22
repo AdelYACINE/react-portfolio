@@ -2,16 +2,14 @@ import { useTranslation } from "react-i18next";
 
 const SelectorLng = () => {
   const { i18n } = useTranslation();
+  const current = i18n.resolvedLanguage === "fr" ? "fr" : "en";
 
-  const handleChange = (e) => {
-    i18n.changeLanguage(e.target.value);
-  };
+  const toggle = () => i18n.changeLanguage(current === "en" ? "fr" : "en");
 
   return (
-    <select className="select w-full " onChange={handleChange}>
-      <option value="en">EN</option>
-      <option value="fr">FR</option>
-    </select>
+    <button className="lang" onClick={toggle} aria-label="Switch language">
+      {current === "en" ? "EN / FR" : "FR / EN"}
+    </button>
   );
 };
 

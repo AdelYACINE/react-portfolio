@@ -1,54 +1,88 @@
-import { FaRegFolderOpen, FaRegStar } from "react-icons/fa";
-import { FiHome } from "react-icons/fi";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import SelectorLng from "./SelectorLng";
 import { useTranslation } from "react-i18next";
+import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
+import { useTheme } from "./ThemeContext";
+import SelectorLng from "./SelectorLng";
+
+const SECTIONS = ["work", "experience", "stack", "contact"];
 
 const Navbar = () => {
   const { t } = useTranslation();
+  const { theme, toggle } = useTheme();
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
-    <ul className="menu menu-horizontal bg-base-200  navbar ">
-      <li>
-        <Link
-          to="home"
-          smooth={true}
-          offset={-95}
-          duration={1000}
-          className="tooltip"
-          data-tip={t("home")}
-        >
-          <FiHome size={25}></FiHome>
-        </Link>
-      </li>
+    <>
+      <nav className="navbar">
+        <div className="wrap">
+          <Link
+            className="brand"
+            to="home"
+            smooth
+            duration={700}
+            aria-label="Back to top"
+          >
+            AY<span>.</span>
+          </Link>
+          <div className="navlinks">
+            <div className="menu-links">
+              {SECTIONS.map((s) => (
+                <Link key={s} to={s} smooth duration={700} offset={-64}>
+                  {t(`nav.${s}`)}
+                </Link>
+              ))}
+            </div>
+            <SelectorLng />
+            <button
+              className="iconbtn"
+              onClick={toggle}
+              aria-label="Toggle theme"
+            >
+              {theme === "light" ? <FiMoon size={17} /> : <FiSun size={17} />}
+            </button>
+            <button
+              className="iconbtn hamburger"
+              onClick={() => setOpen((o) => !o)}
+              aria-label="Menu"
+              aria-expanded={open}
+            >
+              {open ? <FiX size={18} /> : <FiMenu size={18} />}
+            </button>
+          </div>
+        </div>
+      </nav>
 
-      <li>
-        <Link
-          to="projects"
-          smooth={true}
-          offset={-65}
-          duration={1000}
-          className="tooltip"
-          data-tip={t("projects")}
-        >
-          <FaRegFolderOpen size={25}></FaRegFolderOpen>
-        </Link>
-      </li>
-
-      <li>
-        <Link
-          to="experience"
-          smooth={true}
-          offset={-68}
-          duration={1000}
-          className="tooltip"
-          data-tip={t("skills")}
-        >
-          <FaRegStar size={25}></FaRegStar>
-        </Link>
-      </li>
-
-      <SelectorLng />
-    </ul>
+      <div className="overlay" data-open={open} onClick={close} />
+      <aside className="drawer" data-open={open} aria-hidden={!open}>
+        <div className="drawer-head">
+          <span className="mono">MENU</span>
+          <button className="iconbtn" onClick={close} aria-label="Close menu">
+            <FiX size={18} />
+          </button>
+        </div>
+        {SECTIONS.map((s) => (
+          <Link
+            key={s}
+            to={s}
+            smooth
+            duration={700}
+            offset={-64}
+            onClick={close}
+          >
+            {t(`nav.${s}`)}
+          </Link>
+        ))}
+      </aside>
+    </>
   );
 };
 

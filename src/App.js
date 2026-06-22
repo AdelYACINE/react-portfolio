@@ -1,18 +1,22 @@
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Home from "./Sections/Home";
 import Projects from "./Sections/Projects";
 import Experience from "./Sections/Experience";
-import Home from "./Sections/Home";
-import Footer from "./Components/Footer";
+import Stack from "./Sections/Stack";
+import Contact from "./Sections/Contact";
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Navbar />
       <Home />
       <Projects />
       <Experience />
+      <Stack />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

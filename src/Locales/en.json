@@ -1,26 +1,69 @@
 {
-  "home": "Home",
-  "skills": "Skills",
-  "projects": "Projects",
-
-  "herotitle": "Hi,I'm Ahmed Adel YACINE",
-  "heroSecondTitle": "Junior Front-end developer",
-  "herotext": "Passionate React frontend developer, I have been practicing web development for over a year, I have acquired solid skills through my personal projects. Curious and motivated, I am ready to take on new challenges and invest myself fully within a dynamic team.",
-  "herobutton": "view projects",
-
-  "skillstitle": "Skills",
-
-  "experiencetitle": "Experiences",
-  "experiencetitle1": "web development training",
-  "experienceLieu1": "Udemy",
-  "experiencetitle2": "Master in petrochemistry",
-  "experienceLieu2": "University of science and technology of Oran Mohamed Boudiaf faculty of chemistry",
-
-  "projetTitle": "My projects",
-  "projetButton": "view more",
-
-  "linkDirect": "Go Live",
-  "linkGithub": "Check Out Github Repo",
-
-  "footer": "©created by@YACINE ahmed adel 2023"
+  "nav": {
+    "work": "Work",
+    "experience": "Experience",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
+  "status": "FRONTEND DEVELOPER · ORAN, DZ · AVAILABLE",
+  "hero": {
+    "first": "Ahmed Adel",
+    "last": "Yacine",
+    "lead": "I build modern, responsive interfaces with React & Next.js — turning designs into fast, accessible products. Around two years shipping real work, from crypto dashboards to e-commerce flows.",
+    "viewWork": "View work",
+    "cv": "Download CV"
+  },
+  "sections": {
+    "work": "Selected work",
+    "experience": "Experience",
+    "stack": "Stack",
+    "contact": "Let's talk"
+  },
+  "contact": {
+    "title": "Have a project in mind?"
+  },
+  "project": {
+    "live": "Live demo",
+    "source": "Source"
+  },
+  "projects": {
+    "crypto": {
+      "name": "Crypto Tracker",
+      "desc": "Real-time cryptocurrency dashboard pulling live prices from a public API, with pagination, loading states and smooth animated transitions."
+    },
+    "shop": {
+      "name": "Shop — E-commerce",
+      "desc": "Product catalogue with detail views and a full cart flow. State handled with Context API, data fetched over REST."
+    }
+  },
+  "timeline": [
+    {
+      "when": "2025",
+      "role": "Front-End Developer",
+      "org": "Kage Technologies",
+      "desc": "Built modern, scalable interfaces with React.js and Next.js. Developed reusable components, optimised performance and integrated APIs alongside the backend team."
+    },
+    {
+      "when": "2025 · 3 mo",
+      "role": "TALL Stack Developer — Intern",
+      "org": "TechFly",
+      "desc": "Shipped dynamic dashboards and admin panels with Laravel Livewire, Alpine.js and Filament. Built responsive UIs with Tailwind in a production environment."
+    },
+    {
+      "when": "2023 — 24",
+      "role": "Web Development Training",
+      "org": "Udemy · Academind · freeCodeCamp",
+      "desc": "Intensive self-directed front-end track focused on React and modern JavaScript."
+    }
+  ],
+  "stackGroups": [
+    { "k": "CORE", "v": ["React.js", "Next.js", "JavaScript"] },
+    { "k": "MARKUP & STYLE", "v": ["HTML5", "CSS · BEM", "Tailwind"] },
+    { "k": "DATA & TOOLS", "v": ["REST APIs", "Firebase", "Git"] },
+    { "k": "ALSO", "v": ["PHP · Laravel", "Livewire", "Alpine.js"] }
+  ],
+  "footer": {
+    "left": "© 2026 AHMED ADEL YACINE",
+    "right": "DESIGNED & BUILT IN ORAN"
+  }
 }
